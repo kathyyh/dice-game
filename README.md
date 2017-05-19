@@ -1,2 +1,2 @@
 # Dice-Game
-This dice game was developed for my computer science class to aid elementary students in learning numbers.
+I created this program using HTML, CSS, and Javascript to help elementary students with their concept of number sense. Although the interface is simple, the primary focus was on the dice game.
