@@ -1,0 +1,108 @@
+/*Creator: Kathy Hu
+Assignment 3
+Purpose: This program will design my game*/
+
+/*This section designs the overall body of the game*/
+html {
+	background-color: #fefbd8;
+	border-style: double;
+	border-width: 15px;
+	border-color: #d5f4e6;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*This section designs the headings*/
+div#intro {
+	text-align:center;
+	font-family: 'Amatic SC', cursive;
+	color: #618685;
+}
+
+/*This section designs the tagline*/
+h2#tagline {
+	font-style: italic;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: black;
+}
+
+/*This section designs the Rules title*/
+h2#rulesTitle {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+}
+
+/*This section aligns the rules*/
+ol {
+	padding-left: 30%;
+}
+
+/*This section designs the rules*/
+div#rules {
+	border-style: solid;
+	border-width: 5px;
+	border-color: #618685;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*This designs the text of the players's names*/
+div#playerNames {
+	text-align: center;
+}
+
+/*This section designs the area where a goal can be selected*/
+div#goal {
+	text-align: center;
+}
+
+/*This section designs player one's area*/
+div#playerOne {
+	text-align: center;
+	float: left;
+	width: 50%;
+}
+
+/*This section designs player two's area*/
+div#playerTwo {
+	text-align: center;
+}
+
+/*This aligns the play again button*/
+div#playAgain {
+	text-align: center;
+}
+
+/*this designs the section that alerts the winner*/
+p#winner {
+	text-align: center;
+}
+
+/*This section designs headings*/
+.heading {
+	font-family: 'Amatic SC', cursive;
+	color: #618685;
+	font-size: 30px;
+}
+
+/*This section resizes the dice images*/
+.diceImage {
+	width: 100px;
+	height: 100px;
+}
+
+/*This section designs the buttons*/
+.button {
+	text-align: center;
+	display: inline-block;
+	color: #666;
+	background-color: #80ced6;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+}
+
+/*end of program*/

@@ -1,0 +1,94 @@
+<!--Created by: Kathy Hu
+Assignment 3
+Purpose: This program will allow the user to play a dice game!-->
+
+<!DOCTYPE html>
+<html><head>
+<title>Kathy's Game</title>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="khu56assign3.css">
+<script src="khu56assign3.js"></script> 
+</head>
+<body onload="setUp()">
+
+<div id="intro">
+<h1 class="heading">Welcome to Kathy's Game</h1>
+<h2 id="tagline">Dice game fun for everyone!</h2><br/>
+</div>
+
+<!--This section will display the rules of the game!-->
+<div id="rules">
+<h2 id="rulesTitle" class="heading">Rules</h2>
+<ol>
+	<li>Input the names of both players</li>
+	<li>Set the goal of the game so that the winner has the highest number or the lowest number</li>
+	<li>Player one clicks the button to roll the dice. Select which slot you want your value to go</li>
+	<li>Player two clicks the button to roll the dice. Select which slot you want your value to go</li>
+	<li>Repeat until all empty number slots are filled</li>
+	<li>Winner will be declared</li>
+</ol>
+</div>
+
+<!--This section will allow the players to input their names!-->
+<div id="playerNames">
+<h2 class="heading">Player Names</h2>
+Player One:<input type="text" id="playerOneName"><br/>
+Player Two:<input type="text" id="playerTwoName"><br/>
+<p><button class="button" id="submitName" onclick="submitName()">Submit</button></p>
+</div>
+
+<!--This section will allow the players to set the goal of the game!-->
+<div id="goal">
+<h2 class="heading">Set the Goal</h2>
+<input type="radio" name="goal" id="highest">Highest Number 
+<input type="radio" name="goal" id="lowest">Lowest Number<br/>
+<p><button class="button" id="setGoal" onclick="setGoal()">Submit</button></p>
+</div>
+
+<!--This section will display Player One's numbers!-->
+<div id="playerOne">
+<h2 class="heading" id="playerOneNewName">Player One</h2>
+<p id="playerOneSlots">
+	<span id="player1Slot1">_</span>
+	<span id="player1Slot2">_</span>
+	<span id="player1Slot3">_</span>
+	<span id="player1Slot4">_</span>
+</p>
+<button id="p1Slot1Button" onclick="player1Slot1()">Slot 1</button>
+<button id="p1Slot2Button" onclick="player1Slot2()">Slot 2</button>
+<button id="p1Slot3Button" onclick="player1Slot3()">Slot 3</button>
+<button id="p1Slot4Button" onclick="player1Slot4()">Slot 4</button><br/>
+<img class="diceImage" src="dice.png" id="diceOne"><br/>
+<button class="button" id="rollOne" onclick="rollOne()">Roll the dice</button><br/>
+</div>
+
+<!--This section will display Player Two's numbers!-->
+<div id="playerTwo">
+<h2 class="heading" id="playerTwoNewName">Player Two</h2>
+<p id="playerTwoSlots">
+	<span id="player2Slot1">_</span>
+	<span id="player2Slot2">_</span>
+	<span id="player2Slot3">_</span>
+	<span id="player2Slot4">_</span>
+</p>
+<button id="p2Slot1Button" onclick="player2Slot1()">Slot 1</button>
+<button id="p2Slot2Button" onclick="player2Slot2()">Slot 2</button>
+<button id="p2Slot3Button" onclick="player2Slot3()">Slot 3</button>
+<button id="p2Slot4Button" onclick="player2Slot4()">Slot 4</button><br/>
+<img class="diceImage" src="dice.png" id="diceTwo"><br/>
+<button class="button" id="rollTwo" onclick="rollTwo()">Roll the dice</button><br/>
+</div>
+
+<!--This section will display the winner!-->
+<div id="announceWinner">
+<p id="winner"></p>
+</div><br/>
+
+<!--This button will allow the players to play again!-->
+<div id="playAgain">
+<button class="button" id="playAgainButton" onclick="playAgain()">Play Again</button>
+</div>
+
+</body>
+</html>
+<!--End of Program!-->
